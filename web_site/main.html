@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="main.css"/>
+	<title>Un titre</title>
+</head>
+
+<body>
+	<h1 id="welcom">Bienvenue !</h1>
+	<h3 class="presentation">Présentation du projet :</h3>
+	<p class="presentation"><span class="marge">Une</span> fois par semaine, vous recevrez un mail récapitulant de nombreuses informations, tels que les informations importantes de la semaine, une VDM, ou même une petite blague pour répandre la positivitée ! </br>
+	Pour vous inscrire, il suffit de remplir le formulaire ci dessous</p>
+	
+	<form name="inscription" action="cible.php" method="POST" onsubmit="return valider(this)" class="inscription">
+		<table class="form">
+			<tr>
+				<td class="form">Votre nom <span class="obligatoire">*</span></td>
+				<td class="form"><input id="name" type="text" name="name" required/></td>
+			</tr>
+			<tr>
+				<td class="form">Votre prénom <span class="obligatoire">*</span></td>
+				<td class="form"><input id="surname" type="text" name="surname" required/></td>
+			</tr>
+			<tr>
+				<td class="form">Votre genre </td>
+				<td class="form"><input id="gender_M" type="radio" name="gender" value="M"/>
+					<label for="gender_M">Homme</label>
+					<input id="gender_F" type="radio" name="gender" value="F"/>
+					<label for="gender_F">Femme</label>
+					<input id="gender_O" type="radio" name="gender" value="O"/>
+					<label for="gender_O">Autre</label>
+				</td>
+			</tr>
+			<tr>
+				<td class="form">Votre date de naissance </td>
+				<td class="form"><input id="surname" type="text" name="surname" required/></td>
+			</tr>
+			<tr>
+				<td class="form">Votre adresse e-mail <span class="obligatoire">*</span></td>
+				<td class="form"><input id="email" type="text" name="email" required onmouseleave="checkEmail(this)" onmouseup="back2Black(this)"/></td>
+			</tr>
+		</table>
+		<input type="submit" value="Envoyer" onClick="valider()"/>
+	</form>
+	
+	<script src="verifs.js"></script>
+</body>
+</html>
+
