@@ -1,4 +1,4 @@
-# Weekly mail project #
+# L'hebdo numérique #
 ## Description ##
 Mon projet consiste a créer un programme allant chercher, via différentes apis, des informations qui peuvent êtres utiles. Ces informations sont ensuites condensées dans un mail qui sera automatiquement envoyé toutes les semaines à tous ceux qui sont abonnés à la liste de diffusion. L'abonnement à cette liste de diffusion se fera via un site internet.
 
